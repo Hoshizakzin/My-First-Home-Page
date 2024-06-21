@@ -1,0 +1,241 @@
+:root{
+    --corbotao: #2A3547;
+    --corfundo: white;
+    --fundohover: #EBF3FE;
+    --textcolor: black;
+    --bordercolor:#EBF3FE;
+    --botaohover: #5A6A85;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    font: normal 14pt arial;
+}
+
+li{
+    list-style: none;
+}
+
+.botao{
+    color: white;
+    background-color: var(--corbotao);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    font-size: 13pt;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.botao:hover{
+    background-color: var(--botaohover);
+}
+
+#botaoX{
+    line-height: 3px;
+    display: none;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.botaoXline{
+    width: 25px;
+    height: 3px;
+    line-height: 3px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+#botaoXline1{
+    transform: skewY(45deg) translateY(10px);
+}
+
+#botaoXline2{
+    transform: skewY(-45deg);
+}
+
+.titulo{
+    font: italic 28pt times;
+    margin-bottom: 20px;
+}
+
+.subsubtitulo{
+    font: normal 12pt times;
+}
+
+#container{
+    display: flex;
+    overflow: hidden;
+}
+
+#menu{
+    width: 235px;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    background-color: var(--corfundo);
+    color: var(--textcolor);
+    border-right: 2px solid var(--bordercolor);
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    transition: all 0.5s ease-out;
+}
+
+.menu-item:hover{
+    background-color: var(--fundohover);
+}
+
+.menu-item>span img{
+    width:25px;
+    margin: 0 30px;
+}
+
+.capitulo_menu{
+    font: normal 14pt times;
+    transition: all 0.5s ease-out;
+}
+
+.capital_menu{
+    width: 280px;
+    display: flex;
+    text-align: center;
+}
+
+.capital_menu img{
+    width: 50px;
+    margin: 30px 10px 30px 30px;
+}
+.logo_tittle{
+    font: bold 18pt times;
+    margin-top: 30px;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    margin-left: 18vw;
+    width: 74vw;
+    height: 100px;
+    background-color: white;
+}
+
+#cabecalho img{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+#perfil{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+#imagemenu{
+    display: none;
+}
+
+main{
+    width: 700px;
+    margin: 0 auto;
+}
+
+#firstContainer{
+    margin-top: 15vh;
+}
+
+.apresentacao_pricipal{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.apresentacao_pricipal img{
+    width: 30vw;
+    height: 40vh;
+    border-radius: 350px;
+}
+
+.flexivel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.secundario{
+    width: 300px;
+    gap: 15px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.secundario h4, .subtitulo{
+    font: bold 16pt times;
+    font-style: italic;
+    line-height: 40px;
+}
+
+#portfolio{
+    margin-top: 70px;
+}
+
+.onportfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partextual{
+    width: 330px;
+    font: normal 14pt arial;
+}
+
+.onportfolio img{
+    width: 330px;
+    height: 250px;
+    border-radius: 300px;
+}
+
+.developer{
+    text-align: center;
+    margin: 70px 0;
+}
+
+#socials{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#socials img{
+    width: 25px;
+}
